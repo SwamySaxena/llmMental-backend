@@ -54,4 +54,4 @@ scheduler.add_job(update_resources, 'interval', days=1)
 scheduler.start()
 
 if __name__ == '__main__':
-    app.run()  # Run with HTTP for local testing
+    app.run(debug=True, host='0.0.0.0', port=5000)  # Run with HTTP for local testing
